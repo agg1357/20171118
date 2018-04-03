@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>Literature</title>
+	
+	<style type="text/css">
+	
+	body {
+	overflow: hidden;
+	font-size: 100%
+	}
+	
+	
+	
+	
+		
+	#cabecera {
+	width: 			100%;
+	height: 		3.7em;
+	font-family: 		Arial, sans-serif;
+	font-weight: 		bolder;
+	text-align: 		left;
+	color: 				rgb(97,97,97);
+	background-color: 	rgb(238,238,238);
+	border: 			none;
+		
+	-webkit-box-shadow:0 6px 12px rgba(0,0,0,.2);
+	-moz-box-shadodw: 0 6px 12px rgba(0,0,0,.2);
+	box-shadow: 0 6px 12px rgba(0,0,0,.2);
+	}
+	
+	.izquierda {
+	font-size: 1.2em;
+	size: 5em;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	color: rgb(97,97,97);
+	background: rgb(250,250,250);
+	padding-top:			0.1em;
+	padding-left:	0.1em;
+	padding-right:					0.1em;
+	padding-bottom:			0.1em;
+	margin: 0.1em
+	border: 0;
+	width; 5em;
+	height; 2em;
+	border-style: initial;	
+	-webkit-border-radius: 0.07em;
+	-moz-border-radius: 0.07em;
+	border-radius: 0.07em;
+	}
+	
+	
+	.derecha {
+	font-size: 1.2em;
+	size: 5em;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	color: rgb(97,97,97);
+	background: rgb(250,250,250);
+	padding-top:			0.1em;
+	padding-left:	0.1em;
+	padding-right:					0.1em;
+	padding-bottom:			0.1em;
+	margin: 0.1em
+	border: 0;
+	width; 5em;
+	height; 2em;
+	border-style: initial;	
+	-webkit-border-radius: 0.07em;
+	-moz-border-radius: 0.07em;
+	border-radius: 0.07em;
+	}
+	
+	
+		
+	#listado {
+	background-image: url(image/imglistado.png);
+	background-repeat:no-repeat;
+	background-size: 2.8em;
+	height: 3.0em;
+	width: 3.5em;
+	background-position:center;
+	background-color: rgb(238,238,238);
+	}
+	
+	
+	
+	
+	#letras {
+	background-image: url(image/imgletras.png);
+	background-repeat:no-repeat;
+	background-size: 2.8em;
+	height: 3.0em;
+	width: 3.5em;
+	background-position:center;
+	background-color: rgb(238,238,238);
+	}
+	
+		
+	
+	#reloj, #contador {
+	font-size: 1.0em;
+	padding-top:			0.2em;
+	padding-left:	0.0em;
+	padding-right:					0.5em;
+	padding-bottom:			0em;
+	background-color:	rgb(238,238,238);
+	
+	}
+	#contador {padding-top: 0em; padding-bottom: 0.0em;}
+	
+	
+	.izquierda {float: left;}
+	.derecha   {float: right;}
+	.clear {clear: both;}
+	
+	
+	.novisible {display: none;}
+	.visible   {display: block;}
+	
+	
+	
+	
+	
+	
+	
+	
+	#oplistado {
+	position: absolute;
+	z-index: 5; top: 2.5em; left: 0.5em;
+	font-size: 2.4em;
+	font-family: 		Arial, sans-serif;
+	font-weight: 		bolder;
+	text-align: 		left;
+	padding-top:			0.5em;
+	padding-left:	0.5em;
+	padding-right:					0.5em;
+	padding-bottom:			0.5em;
+	color: 				rgb(97,97,97);
+	background-color: 	rgb(250,250,250);
+	border: 			none;
+	line-height: 0.5em;
+	max-height:15em;
+	
+	-webkit-border-radius: 0.15em;
+	-moz-border-radius: 0.15em;
+	border-radius: 0.15em;
+	
+	-webkit-box-shadow:0 10px 20px rgba(0,0,0,.2);
+	-moz-box-shadodw: 0 10px 20px rgba(0,0,0,.2);
+	box-shadow: 0 10px 20px rgba(0,0,0,.2);
+	}
+	
+	#salir {
+	background-image: url(image/imgsalir.png);
+	background-repeat:no-repeat;
+	background-size: 1.5em;
+	height: 1.5em;
+	width: 1.5em;
+	background-position:center;
+	}
+	
+	#compartir {
+	background-image: url(image/imgcompartir.png);
+	background-repeat:no-repeat;
+	background-size: 1.5em;
+	height: 1.5em;
+	width: 1.5em;
+	background-position:center;
+	}
+	
+	
+	#maslibros {
+	background-image: url(image/imglibros.png);
+	background-repeat:no-repeat;
+	background-size: 1.5em;
+	height: 1.5em;
+	width: 1.5em;
+	background-position:center;
+	}
+	
+	#marcador {
+	background-image: url(image/imgmarcador.png);
+	background-repeat:no-repeat;
+	background-size: 1.5em;
+	height: 1.5em;
+	width: 1.5em;
+	background-position:center;
+	}
+	
+	#abrirlibro {
+	background-image: url(image/imgabrirlibro.png);
+	background-repeat:no-repeat;
+	background-size: 1.5em;
+	height: 1.5em;
+	width: 1.5em;
+	background-position:center;
+	}
+	
+	
+	#pormarcador {
+	position: absolute;
+	background: rgb(250,250,250);
+	background-position:center;
+	border: none;
+	font-size: 0.4em;
+	
+	}
+		
+	.sinbotonmar {
+	font-size: 0.8em;
+	size: 8em;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	color:rgb(97,97,97);
+	padding-top:			0.0em;
+	padding-left:	6.0em;
+	padding-right:					0.1em;
+	padding-bottom:			0.0em;
+	margin: 0.0em
+	border: none;
+	width; 5em;
+	height; 1em;
+	}
+	
+	
+	
+	#titulo {
+	font-size: 0.5em;
+	font-family: Arial, sans-serif;
+	line-height: 1.4em;
+	max-width: 15em;
+	}
+	
+	#autor {
+	font-size: 0.5em;
+	font-family: Arial, sans-serif;
+	line-height: 1.4em;
+	max-width: 15em;
+	}
+	
+	#listaT {
+	font-size: 0.5em;
+	font-family: Arial, sans-serif;
+	line-height: 1.8em;
+	max-width: 15em;
+	max-height: 11.5em;
+	overflow: scroll;
+	}
+	
+	
+	
+	
+	
+	
+	#opfuentes {
+	position: absolute;
+	z-index: 5; top: 3.0em; left: 2.5em;
+	font-size: 2.0em;
+	font-family: 		Arial, sans-serif;
+	font-weight: 		bolder;
+	text-align: 		left;
+	padding-top:			0.5em;
+	padding-left:	0.5em;
+	padding-right:					0.5em;
+	padding-bottom:			0.5em;
+	color: 				rgb(97,97,97);
+	background-color: 	rgb(250,250,250);
+	border: 			none;
+	line-height: 0.5em;
+	         /*overflow: scroll;*/  
+	max-height:18em;
+	
+	-webkit-border-radius: 0.15em;
+	-moz-border-radius: 0.15em;
+	border-radius: 0.15em;
+	
+	-webkit-box-shadow:0 10px 20px rgba(0,0,0,.2);
+	-moz-box-shadodw: 0 10px 20px rgba(0,0,0,.2);
+	box-shadow: 0 10px 20px rgba(0,0,0,.2);
+	}
+	
+	.boton {
+	font-size: 1.2em;
+	size: 5em;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	color: rgb(97,97,97);
+	background: rgb(250,250,250);
+	padding-top:			0.1em;
+	padding-left:	0.1em;
+	padding-right:					0.1em;
+	padding-bottom:			0.1em;
+	margin: 0.1em
+	border: 0;
+	width; 5em;
+	height; 2em;
+	border-style: initial;	
+	-webkit-border-radius: 0.07em;
+	-moz-border-radius: 0.07em;
+	border-radius: 0.07em;
+	}
+	
+	.boton:focus {outline: none;}
+	.izquierda:focus {outline: none;}
+	.derecha:focus {outline: none;}
+	
+	
+			
+		
+	#menos1 {
+	background-image: url(image/menos1.png);
+	background-repeat:no-repeat;
+	background-size: 1.5em;
+	height: 1.5em;
+	width: 1.5em;
+	background-position:center;
+	}
+	
+	
+	
+	#porcentaje2 {
+	background: rgb(250,250,250);
+	height: 1.5em;
+	width: 3.0em;
+	background-position:center;
+	border: none;
+	}
+	.sinboton2 {
+	font-size: 0.6em;
+	size: 8em;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	color:rgb(97,97,97);
+	padding-top:			0.1em;
+	padding-left:	0.1em;
+	padding-right:					0.1em;
+	padding-bottom:			0.1em;
+	margin: 0.1em
+	border: none;
+	width; 5em;
+	height; 2em;
+	}
+	
+	#mas3 {
+	background-image: url(image/mas3.png);
+	background-repeat:no-repeat;
+	background-size: 1.5em;
+	height: 1.5em;
+	width: 1.5em;
+	background-position:center;
+	}
+	
+	
+	#menos4 {
+	background-image: url(image/menos4.png);
+	background-repeat:no-repeat;
+	background-size: 1.5em;
+	height: 1.5em;
+	width: 1.5em;
+	background-position:center;
+	}
+	
+	
+	
+	#porcentaje4 {
+	background: rgb(250,250,250);
+	height: 1.5em;
+	width: 3em;
+	background-position:center;
+	border: none;
+	}
+	.sinboton5 {
+	font-size: 0.6em;
+	size: 5em;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	color:rgb(97,97,97);
+	padding-top:			0.1em;
+	padding-left:	0.1em;
+	padding-right:					0.1em;
+	padding-bottom:			0.1em;
+	margin: 0.1em
+	border: none;
+	width; 5em;
+	height; 2em;
+	}
+	
+	#mas6 {
+	background-image: url(image/mas6.png);
+	background-repeat:no-repeat;
+	background-size: 1.5em;
+	height: 1.5em;
+	width: 1.5em;
+	background-position:center;
+	}
+	
+	
+	
+	#menos7 {
+	background-image: url(image/menos7.png);
+	background-repeat:no-repeat;
+	background-size: 1.5em;
+	height: 1.5em;
+	width: 1.5em;
+	background-position:center;
+	}
+	
+	
+	
+	#porcentaje8 {
+	background: rgb(250,250,250);
+	height: 1.5em;
+	width: 3em;
+	background-position:center;
+	border: none;
+	}
+		
+	#mas9 {
+	background-image: url(image/mas9.png);
+	background-repeat:no-repeat;
+	background-size: 1.5em;
+	height: 1.5em;
+	width: 1.5em;
+	background-position:center;
+	}
+	
+	
+	
+	
+	#menos10 {
+	background-image: url(image/menos10.png);
+	background-repeat:no-repeat;
+	background-size: 1.5em;
+	height: 1.5em;
+	width: 1.5em;
+	background-position:center;
+	}
+	
+	
+	
+	#porcentaje11 {
+	background: rgb(250,250,250);
+	height: 1.5em;
+	width: 3em;
+	background-position:center;
+	border: none;
+	}
+	.sinboton11 {
+	font-size: .6em;
+	size: 5em;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	color:rgb(97,97,97);
+	padding-top:			0.1em;
+	padding-left:	0.1em;
+	padding-right:					0.1em;
+	padding-bottom:			0.1em;
+	margin: 0.1em
+	border: none;
+	width; 5em;
+	height; 2em;
+	}
+	
+	#mas12 {
+	background-image: url(image/mas12.png);
+	background-repeat:no-repeat;
+	background-size: 1.5em;
+	height: 1.5em;
+	width: 1.5em;
+	background-position:center;
+	}
+	
+	
+	#idioma {
+		
+	font-size: 0.7em;
+	font-family: Arial, sans-serif;
+	line-height: 1.8em;
+	max-width: 9em;
+	/*max-height: 7.2em;*/
+	/*overflow: scroll;*/
+	}
+	
+	
+	
+	
+	
+	
+	img {
+	width: 60%;
+	margin-left: 20%;
+	margin-right: 20%;
+	max-height: 30em;
+		
+	
+
+	
+	
+	
+	-webkit-border-radius: 0.25em;
+	-moz-border-radius: 0.25em;
+	border-radius: 0.25em;
+	
+	-webkit-box-shadow:0 10px 20px rgba(0,0,0,.2);
+	-moz-box-shadodw: 0 10px 20px rgba(0,0,0,.2);
+	box-shadow: 0 10px 20px rgba(0,0,0,.2);
+	}
+	
+	
+	#tituloportada {
+	font-family: Parisienne, cursive;
+	font-weight: bold;
+	font-size: 1.6em;
+	text-align: center;
+	margin: 5%;
+	padding-left: 2%;
+	}
+	
+	#autorportada {
+	font-family: Parisienne, cursive;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 1.2em;
+	text-align: center;
+	margin: 5%;
+	padding-left: 2%;
+	}
+	
+	
+	
+	#cuerpo p {
+	
+	overflow: hidden;
+	border: none;
+	font-size: 1.5em;
+	text-align: justify;
+	/*text-align: left;*/
+	margin: 1.6em;
+	}
+	
+	
+		
+		
+		
+		
+			
+		
+	
+	#chooseL p {
+	font-family: Lato;
+	font-weight: bold;
+	/*font-style: italic;*/
+	font-size: 1.0em;
+	text-align: left;
+	
+	
+	-webkit-border-radius: 0.25em;
+	-moz-border-radius: 0.25em;
+	border-radius: 0.25em;
+	
+	padding: 1.0em;
+	margin: 1.0em;
+	
+	}	
+	
+	
+		@font-face {font-family: 'Roboto'; src: url(fonts/Roboto-Regular.ttf);}
+		@font-face {font-family: 'PT Sans';src: url(fonts/PT_Sans-Web-Regular.ttf);}
+		@font-face {font-family: 'Dosis'; src: url(fonts/Dosis-Regular.ttf);}
+		@font-face {font-family: 'Cabin'; src: url(fonts/Cabin-Regular.ttf);}
+		@font-face {font-family: 'Hind'; src: url(fonts/Hind-Regular.ttf);}
+		@font-face {font-family: 'Heebo'; src: url(fonts/Heebo-Regular.ttf);}
+		@font-face {font-family: 'Exo'; src: url(fonts/Exo-Regular.ttf);}
+		@font-face {font-family: 'Lato'; src: url(fonts/Lato-Regular.ttf);}
+		@font-face {font-family: 'Alegreya'; src: url(fonts/Alegreya-Regular.ttf);}
+		@font-face {font-family: 'Libre Baskerville'; src: url(fonts/LibreBaskerville-Regular.ttf);}
+		@font-face {font-family: 'Titillium Web'; src: url(fonts/TitilliumWeb-Regular.ttf);}
+		@font-face {font-family: 'Ubuntu'; src: url(fonts/Ubuntu-Regular.ttf);}
+		@font-face {font-family: 'Open Sans'; src: url(fonts/OpenSans-Regular.ttf);}
+		@font-face {font-family: 'Questrial'; src: url(fonts/Questrial-Regular.ttf);}
+		@font-face {font-family: 'Kaushan Script'; src: url(fonts/KaushanScript-Regular.ttf);}
+		@font-face {font-family: 'Parisienne'; src: url(fonts/Parisienne-Regular.ttf);}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	</style>
+	
+	
+	
+	
+</head>
+<body>
+	
+	<div id="chooseL" class="visible">
+	</br>
+	<p id="ppen" class="visible"></p>
+	<p id="ppes" class="visible"></p>
+	<p id="ppfr" class="visible"></p>
+	<p id="ppde" class="visible"></p>
+	<p id="ppit" class="visible"></p>
+	<p id="pppt" class="visible"></p>
+	</div>
+	
+	
+	<div id="cabecera" class="novisible">
+	<input id="listado" class="izquierda" type="button" name="nlistado" value=" "/>
+	<input id="letras" class="izquierda" type="button" name="nletras" value=" " />
+	<span id="reloj" class="derecha"></span>
+	</br></br>
+	<span id="contador" class="derecha"></span>
+	<span id="comodin" class="clear"></span>
+	</div>
+
+	
+	
+	
+	<div id="oplistado" class="novisible">
+	<input id="marcador" class="boton" type="button" name="opmarcador" value=" "/>
+	<input id="abrirlibro" class="boton" type="button" name="opabrirlibro" value=" "/>
+	<input id="compartir" class="boton" type="button" name="opcompartir" value=" "/>
+	<input id="maslibros" class="boton" type="button" name="opmaslibros" value=" "/>
+	<input id="salir" class="boton" type="button" name="opsalir" value=" "/>
+	</br>
+	<input id="pormarcador" class="sinbotonmar" type="button" name="poropmarcador" value="50,83%"/>
+	</br>
+	</br>
+	<p id="titulo" class="titulo"/> </p>
+	<p id="autor" class="autor"/> </p>
+	</br>
+	<ul id="listaT"> </ul>
+	</div>
+	
+	
+	
+	<div id="opfuentes" class="novisible">
+	<input id="menos1" class="boton" type="button" name="op01" value=" "/>
+	<input id="porcentaje2" class="sinboton2" type="button" name="op02" value=" "/>
+	<input id="mas3" class="boton" type="button" name="op03" value=" "/>
+	</br></br></br>
+	<input id="menos4" class="boton" type="button" name="op04" value=" "/>
+	<input id="porcentaje4" class="sinboton5" type="button" name="op05" value="100%"/>
+	<input id="mas6" class="boton" type="button" name="op06" value=" "/>
+	</br></br></br>
+	<input id="menos7" class="boton" type="button" name="op07" value=" "/>
+	<input id="porcentaje8" class="sinboton5" type="button" name="op08" value="100%"/>
+	<input id="mas9" class="boton" type="button" name="op09" value=" "/>
+	</br></br></br>
+	<input id="menos10" class="boton" type="button" name="op10" value=" "/>
+	<input id="porcentaje11" class="sinboton11" type="button" name="op11" value="     "/>
+	<input id="mas12" class="boton" type="button" name="op12" value=" "/>
+	</br>
+	</br>
+	<ul id="idioma" class="visible"> </ul>
+	</div>
+	
+		
+	<div id="portada" class="novisible">
+		<img id="imagen" src="picture.jpg" /img>
+		<p id="tituloportada"></p>
+		<p id="autorportada"></p>
+	</div>
+	
+		
+		
+	<div id="cuerpo" class="visible">
+		<p id="prueba"> </p>
+	</div>
+	
+	
+
+	
+	
+	
+	<noscript>
+	<p>Close and restart</p>
+	<p>Cerrar y volver a iniciar</p>
+	</noscript>
+	
+	
+	<script type="text/javascript" src="https://agg1357.github.io/20171119/comodin.js"></script>
+	<script type="text/javascript" src="ENnovel.js"></script>
+	<script type="text/javascript" src="ESnovel.js"></script>
+	<script type="text/javascript" src="FRnovel.js"></script>
+	<script type="text/javascript" src="DTnovel.js"></script>
+	<script type="text/javascript" src="ITnovel.js"></script>
+	<script type="text/javascript" src="PTnovel.js"></script>
+	
+	<script type="text/javascript" src="js/size.js"></script>
+	<script type="text/javascript" src="js/touches.js"></script>
+	
+	<script type="text/javascript" src="js/language.js"></script>
+	
+	<script type="text/javascript" src="js/code.js"></script>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</body>
+</html>
